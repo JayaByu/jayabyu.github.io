@@ -423,6 +423,8 @@ img {
 .about__container {
   margin-bottom: 15%;
 }
+
+
 .about__img {
   width: 200px;
   border-radius: .5rem;
@@ -431,8 +433,9 @@ img {
 }
 
 .about__description {
-  text-align: center;
+  text-align: justify;
   margin-bottom: var(--mb-2-5);
+
 }
 
 
@@ -611,7 +614,7 @@ img {
 /*==================== PORTO ====================*/
 section.portfolio {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 20%;
 }
 .portfolio__container {
   overflow: initial;
@@ -1029,7 +1032,7 @@ footer .footer__social a:hover {
   }
 
   .about__description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .about__info {
