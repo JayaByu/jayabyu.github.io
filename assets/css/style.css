@@ -623,10 +623,16 @@ section.portfolio {
 .portfolio__content {
   padding: 0 1.5rem;
   text-align: justify;
+  align-items: center;    /* ← ganti dari align-self ke align-items */
+  display: grid;          /* ← tambah ini */
+  grid-template-columns: max-content 1fr;  /* ← tambah ini */
+  gap: 1.5rem;            /* ← tambah ini */
 }
 
 .portfolio__img {
   width: 265px;
+  height: 290px;        /* tambah ini */
+  object-fit: cover;    /* tambah ini */
   border-radius: .5rem;
   justify-self: center;
 }
@@ -946,6 +952,7 @@ footer .footer__social a:hover {
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;   /* ← tambah ini */
   }
 }
 
@@ -1066,6 +1073,10 @@ footer .footer__social a:hover {
 
   .portfolio__img {
     width: 320px;
+    height: 290px;
+    align-items: center;
+    align-self: center;
+    object-fit: cover;
   }
 
   .portfolio__content {
